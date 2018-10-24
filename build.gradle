@@ -1,5 +1,5 @@
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version '1.2.71'
+    id 'org.jetbrains.kotlin.jvm' version '1.3.0-rc-198'
 }
 
 group 'de.jwin'
@@ -14,7 +14,7 @@ dependencies {
     compile 'org.zeroturnaround:zt-exec:1.10'
     compile 'com.squareup.okio:okio:2.1.0'
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
-    compile "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.27.0"
+    compile "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.0.0-RC1"
 }
 
 compileKotlin {
@@ -22,9 +22,4 @@ compileKotlin {
 }
 compileTestKotlin {
     kotlinOptions.jvmTarget = "1.8"
-}
-kotlin {
-    experimental {
-        coroutines "enable"
-    }
 }
